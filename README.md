@@ -8,7 +8,7 @@ Item Response Theory is a mathematical model that estimates a student's ability 
 
 Since each question of test has three parameters that represents its difficulty, discrimination and the probability of getting randomly, a function called Item Characterist Curve (ICC) is setted up for each of them. This function describes the probability of getting the question according to student's ability.
 
-Given two text files that contains all question's parameters and all student's answer for each one (provided by Professor Valdinei Freire da Silva), the program builds all ICC's and applies the ln-likelihood model. We can define the ln-likelihood model as l(θ|X) = ln[Pi Product of all CCI'S], where θ is the student's ability and X is all his/her answers for questions. Thus, the value of θ where the function is maximum is the estimated student's ability.
+Given two text files that contains all question's parameters and all student's answer for each one (provided by Professor Valdinei Freire da Silva), the program builds all ICC's and applies the ln-likelihood model. We can define the ln-likelihood model as l(θ|X) = ln[Pi Product of all CCI's], where θ is the student's ability and X is all his/her answers for questions. Thus, the value of θ where the function is maximum is the estimated student's ability.
 
 ### How to use
 
