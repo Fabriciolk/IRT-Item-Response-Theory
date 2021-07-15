@@ -27,6 +27,20 @@ public abstract class TRIFunction implements Function
         return c;
     }
 
+    public boolean equals(Object obj)
+    {
+        if(obj instanceof TRIFunction)
+        {
+            return a == ((TRIFunction) obj).getA() && b == ((TRIFunction) obj).getB() && c == ((TRIFunction) obj).getC();
+        }
+        return false;
+    }
+
+    public int hashCode()
+    {
+        return (int)(getA()*100 + getB()*10 + getC());
+    }
+
     @Override
     public String toString() {
         return "TRIFunction{" +
