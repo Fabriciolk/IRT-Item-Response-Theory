@@ -21,7 +21,7 @@ public class Image {
 
     public Image(int w, int h){
 
-        setup(w, h, 0, 0, 0);
+        setup(w, h, 255, 255, 255);
     }
 
     private void setup(int w, int h, int r, int g, int b){

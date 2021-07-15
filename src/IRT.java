@@ -36,10 +36,15 @@ public class IRT
         while (iterator.hasNext())
         {
             Image img = new Image(700, 800);
+            img.setColor(0, 0, 0);
             GraphDraw g = new GraphDraw(new int[] {50, 50}, 600, 700);
 
             // Build graphic in image, drawing axis, unities lines and ranges
-            g.drawAxis(600, 300, new double[] {thetaRange, thetaRange*(-1)}, new double[] {-100, 10}, img);
+            img.drawLine(0, 0, 699, 0);
+            img.drawLine(0, 0, 0, 799);
+            img.drawLine(699, 799, 699, 0);
+            img.drawLine(699, 799, 0, 799);
+            g.drawAxis(630, 300, new double[] {thetaRange, thetaRange*(-1)}, new double[] {-100, 10}, img);
             g.drawUnitsAxis(40, img);
             g.drawRangesOnAxis(img);
 
